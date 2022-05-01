@@ -1,0 +1,25 @@
+{
+    "name": "drongotech/response_parser",
+    "description": "Used to to return json or raw response based on the request of the client",
+    "type": "library",
+    "require": {},
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Drongotech\\ResponseParser\\": "src/",
+            "Drongotech\\ResponseParser\\Traits\\": "traits/"
+        }
+    },
+    "authors": [{
+        "name": "Noor Abdi",
+        "email": "noor@drongo.vip"
+    }],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Drongotech\\ResponseParser\\ResponseParserServiceProvider"
+            ]
+        }
+    }
+}
