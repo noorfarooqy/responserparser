@@ -9,9 +9,7 @@ trait ErrorParser
 
     public function setError($error)
     {
-
-        $this->error_message = "Oops! Something went wrong. Please try again";
-
+        $this->error_message = $error;
     }
 
     public function getMessage()
