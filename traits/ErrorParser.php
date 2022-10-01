@@ -9,11 +9,8 @@ trait ErrorParser
 
     public function setError($error)
     {
-        if (env('APP_DEBUG') == true) {
-            $this->error_message = $error;
-        } else {
-            $this->error_message = "Oops! Something went wrong. Please try again";
-        }
+
+        $this->error_message = "Oops! Something went wrong. Please try again";
 
     }
 
