@@ -14,14 +14,14 @@ trait ResponseTrait
                 "error_message" => $message,
                 "data" => $data,
                 "code" => $code,
-                "file" => $file,
+                "file" => env('APP_DEBUG') ? $file : '',
             ];
         } else {
             $response = [
                 "success_message" => $message,
                 "data" => $data,
                 "code" => $code,
-                "file" => $file,
+                "file" => env('APP_DEBUG') ? $file : '',
             ];
         }
 
